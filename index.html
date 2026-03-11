@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>クロちゃん - Anthropicマスコット</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- キャラクター -->
+  <div id="character" class="expr-normal" title="クリック: 表情変化 / ドラッグ: 移動">
+    <svg id="character-svg" xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 18 12" width="180" height="120" shape-rendering="crispEdges">
+      <g class="character">
+        <!-- 腕 L -->
+        <rect class="arm arm-l" x="0" y="2" width="2" height="2" fill="#d97757"/>
+        <!-- 腕 R -->
+        <rect class="arm arm-r" x="12" y="2" width="2" height="2" fill="#d97757"/>
+        <!-- 胴体・頭部 -->
+        <g class="body">
+          <rect x="2" y="0" width="10" height="1" fill="#d97757"/>
+          <rect x="2" y="1" width="2"  height="1" fill="#d97757"/>
+          <rect x="5" y="1" width="4"  height="1" fill="#d97757"/>
+          <rect x="10" y="1" width="2" height="1" fill="#d97757"/>
+          <rect x="2" y="2" width="10" height="2" fill="#d97757"/>
+          <rect x="2" y="4" width="10" height="1" fill="#d97757"/>
+          <rect x="6" y="5" width="2"  height="1" fill="#d97757"/>
+          <rect class="eye eye-l" x="4" y="1" width="1" height="1" fill="#2C1A0E"/>
+          <rect class="eye eye-r" x="9" y="1" width="1" height="1" fill="#2C1A0E"/>
+        </g>
+        <!-- 脚 -->
+        <rect class="leg leg-1" x="2"  y="5" width="1" height="3" fill="#d97757"/>
+        <rect class="leg leg-2" x="5"  y="5" width="1" height="3" fill="#d97757"/>
+        <rect class="leg leg-3" x="8"  y="5" width="1" height="3" fill="#d97757"/>
+        <rect class="leg leg-4" x="11" y="5" width="1" height="3" fill="#d97757"/>
+      </g>
+    </svg>
+    <div id="expr-label"></div>
+  </div>
+
+  <!-- ヒントテキスト -->
+  <div id="hint">クリック: 表情変化 ／ ドラッグ: 移動</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
